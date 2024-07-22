@@ -98,7 +98,7 @@ function drawOne(gd, index) {
         for(var sensory = 1; sensory >= 0; sensory--) {
             var path = selectionLayer.append('path')
                 .attr(attrs)
-                .style('opacity', sensory ? 0.1 : opacity)
+                .style('opacity', sensory ? 0 : opacity)
                 .call(Color.stroke, lineColor)
                 .call(Color.fill, fillColor)
                 // make it easier to select senory background path
