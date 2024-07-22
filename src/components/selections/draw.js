@@ -99,8 +99,8 @@ function drawOne(gd, index) {
             var path = selectionLayer.append('path')
                 .attr(attrs)
                 .style('opacity', sensory ? 0 : opacity)
-                .call(Color.stroke, lineColor)
-                .call(Color.fill, fillColor)
+                .call(Color.stroke, 'blue')
+                .call(Color.fill, 'orange')
                 // make it easier to select senory background path
                 .call(Drawing.dashLine,
                     sensory ? 'solid' : lineDash,
