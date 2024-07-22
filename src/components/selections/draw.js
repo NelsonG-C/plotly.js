@@ -104,7 +104,7 @@ function drawOne(gd, index) {
                 // make it easier to select senory background path
                 .call(Drawing.dashLine,
                     sensory ? 'solid' : lineDash,
-                    sensory ? 4 + lineWidth : lineWidth
+                    0
                 );
 
             setClipPath(path, gd, options);
